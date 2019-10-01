@@ -36,8 +36,8 @@ def rog():
         cek.write('Spam Sudah Dikirim Ke Target Follow Instagram wisnu_as123\n\n')
         cek.write('Nomor Hp Korban : '+nomor)
         cek.write('\nJumlah Spam : '+jumlh)
-        cek.write('\n\nTerima Kasih Sudah Memakai Tools Saya Yang Sangat Keren')
-        cek.write('\n\n===[ TTD : Wisnu Saputra && CyberTCA ]===')
+        cek.write('\n\nTerima Kasih Sudah Memakai Tools Saya Follow Instagram wisnu_as123')
+        cek.write('\n\n===[ THX : Wisnu Saputra && CyberTCA ]===')
         cek.close()
         os.system('mv -f bukti.txt /storage/emulated/0')
         print "\n\033[31;1m+==========================================+"

@@ -24,9 +24,7 @@ def tik():
 
 def rog():
         try:
-           os.system('clear')
-
-	       no = input("\033[1;32m[+] Nomer Target [62xxx] :\033[1;37m ")
+ 	       no = input("\033[1;32m[+] Nomer Target [62xxx] :\033[1;37m ")
 	       jum=int(input("\033[1;35m[+] Jumlah : \033[1;37m"))
     except KeyboardInterrupt:
 	 print("\nKey interrupt")

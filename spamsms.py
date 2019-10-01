@@ -21,8 +21,6 @@ def tik():
         sys.stdout.write('\r\033[32;1m[=]\033[37;1m Sedang Mengirim \033[31;1m' + animation[(i % len(animation))])
         sys.stdout.flush()
 
-
-def rog():
 try:
 	os.system('clear')
 	print("""\033[1;32m

